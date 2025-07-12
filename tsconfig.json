@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ts/types": ["packages/types/src"],
+      "@ts/sdk": ["packages/sdk/src"],
+      "@ts/cli": ["packages/cli/src"]
+    }
+  }
+} 
