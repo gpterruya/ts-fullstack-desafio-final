@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@ts/types": ["packages/types/src"],
+      "@ts/types": ["packages/types/dist"],
       "@ts/sdk": ["packages/sdk/src"],
       "@ts/cli": ["packages/cli/src"]
     }
