@@ -1,7 +1,9 @@
 import express from 'express';
 import { Usuario, Produto } from '@ts/types';
+import cors from 'cors';
 
 const app = express();
+app.use(cors())
 app.use(express.json());
 
 app.get('/usuario', (_req, res) => {

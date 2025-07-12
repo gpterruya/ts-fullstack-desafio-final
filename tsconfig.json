@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@ts/types": ["packages/types/dist"],
-      "@ts/sdk": ["packages/sdk/src"],
+      "@ts/sdk": ["packages/sdk/dist"],
       "@ts/cli": ["packages/cli/src"]
     }
   }
