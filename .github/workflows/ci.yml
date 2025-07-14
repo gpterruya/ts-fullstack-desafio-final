@@ -31,7 +31,7 @@ jobs:
         run: pnpm install
 
       - name: Rodar build
-        run: pnpm build
+        run: pnpm turbo run build
 
       - name: Rodar testes
         run: pnpm test
