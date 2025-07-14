@@ -2,11 +2,9 @@ name: CI
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   build-and-test:
@@ -22,13 +20,15 @@ jobs:
           node-version: 18
           cache: 'pnpm'
 
-      - name: Instalar pnpm
-        run: npm install -g pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
 
       - name: Instalar dependências
         run: pnpm install
 
-      - name: Rodar build
+      - name: Build dos pacotes
         run: pnpm build
 
       - name: Rodar testes
