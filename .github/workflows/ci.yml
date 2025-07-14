@@ -29,11 +29,11 @@ jobs:
         run: pnpm install
 
       - name: Build all packages
-        run: pnpm turbo run build
+        run: pnpm run build
 
       - name: Start backend in background
         run: pnpm --filter @ts/backend start &
-        
+
       - name: Wait for backend to be ready
         run: |
           for i in {1..15}; do
@@ -48,5 +48,5 @@ jobs:
           echo "Backend did not start in time"
           exit 1
 
-      - name: Run tests on SDK
-        run: pnpm --filter @ts/sdk test
+      - name: Run tests
+        run: pnpm run test

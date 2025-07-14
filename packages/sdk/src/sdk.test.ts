@@ -12,4 +12,9 @@ describe("SDK", () => {
     const produto = await sdk.getProduto();
     expect(produto.preco).toBeGreaterThan(0);
   });
+
+  it("deve buscar usuário", async () => {
+    const usuario = await sdk.getUsuario();
+    expect(usuario).toHaveProperty("nome");
+  });
 });
