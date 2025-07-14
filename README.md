@@ -1,4 +1,21 @@
-# Desafio Final - Fullstack TypeScript Monorepo
+# 🚀 Template Fullstack TypeScript Monorepo
 
-Projeto criado no Dia 28 do curso de TypeScript.
-Inclui backend, frontend, CLI, SDK, tipos compartilhados, testes e CI/CD.
+Monorepo TypeScript completo com:
+
+✅ Backend (Express)  
+✅ Frontend (Vite + React)  
+✅ SDK + Tipagem compartilhada  
+✅ CLI Generator  
+✅ Testes (Vitest)  
+✅ CI/CD (GitHub Actions)  
+✅ Lint + Prettier
+
+## Como usar
+
+Clique no botão **"Use this template"** acima ☝️ para criar um novo repositório com essa estrutura.
+
+## Instalação
+
+```bash
+pnpm install
+pnpm dev
