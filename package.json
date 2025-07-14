@@ -10,7 +10,8 @@
     "cli": "tsx packages/cli/src/index.ts",
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "lint": "eslint . --ext .ts,.tsx --fix"
+    "lint": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "@typescript-eslint/parser": "^8.36.0",
     "@vitest/coverage-c8": "^0.33.0",
     "eslint": "^9.31.0",
+    "prettier": "^3.6.2",
     "ts-node": "^10.9.2",
     "tsx": "^4.20.3",
     "turbo": "^2.5.4",

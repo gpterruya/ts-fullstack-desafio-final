@@ -27,9 +27,12 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-        
+
       - name: Rodar lint
         run: pnpm lint
+
+      - name: Verificar formatação com Prettier
+        run: pnpm prettier --check .
 
       - name: Build all packages
         run: pnpm run build

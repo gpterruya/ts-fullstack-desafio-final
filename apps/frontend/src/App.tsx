@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import { sdk } from "@ts/sdk";
+import { useEffect, useState } from 'react';
+import { sdk } from '@ts/sdk';
 
 function App() {
-  const [nomeUsuario, setNomeUsuario] = useState("");
-  const [produto, setProduto] = useState("");
+  const [nomeUsuario, setNomeUsuario] = useState('');
+  const [produto, setProduto] = useState('');
 
   useEffect(() => {
     sdk.getUsuario().then((u) => setNomeUsuario(u.nome));
@@ -11,9 +11,9 @@ function App() {
   }, []);
 
   return (
-    <div style={{ fontFamily: "sans-serif", padding: "2rem" }}>
-      <h1>Olá, {nomeUsuario || "carregando..."}!</h1>
-      <h2>Produto em destaque: {produto || "carregando..."}</h2>
+    <div style={{ fontFamily: 'sans-serif', padding: '2rem' }}>
+      <h1>Olá, {nomeUsuario || 'carregando...'}!</h1>
+      <h2>Produto em destaque: {produto || 'carregando...'}</h2>
     </div>
   );
 }

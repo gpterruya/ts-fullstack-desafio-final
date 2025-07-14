@@ -1,20 +1,20 @@
-import { describe, it, expect } from "vitest";
-import { sdk } from ".";
+import { describe, it, expect } from 'vitest';
+import { sdk } from '.';
 
-describe("SDK", () => {
-  it("deve retornar um usuário com nome", async () => {
+describe('SDK', () => {
+  it('deve retornar um usuário com nome', async () => {
     const usuario = await sdk.getUsuario();
     expect(usuario.nome).toBeDefined();
-    expect(typeof usuario.nome).toBe("string");
+    expect(typeof usuario.nome).toBe('string');
   });
 
-  it("deve retornar um produto com preço", async () => {
+  it('deve retornar um produto com preço', async () => {
     const produto = await sdk.getProduto();
     expect(produto.preco).toBeGreaterThan(0);
   });
 
-  it("deve buscar usuário", async () => {
+  it('deve buscar usuário', async () => {
     const usuario = await sdk.getUsuario();
-    expect(usuario).toHaveProperty("nome");
+    expect(usuario).toHaveProperty('nome');
   });
 });
