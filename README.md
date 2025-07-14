@@ -22,7 +22,7 @@
 ---
 
 ## 📁 Estrutura
-
+```
 ├── apps
 │ ├── backend # API Express
 │ └── frontend # App React (Vite)
@@ -34,6 +34,9 @@
 │ └── workflows # CI com build + lint + test
 ├── turbo.json
 └── pnpm-workspace.yaml
+```
+
+---
 
 ## 🛠️ Instalação
 
@@ -42,6 +45,8 @@ git clone https://github.com/<SEU_USUARIO>/ts-fullstack-desafio-final.git
 cd ts-fullstack-desafio-final
 pnpm install
 ```
+
+---
 
 ## 🎯 Scripts úteis
 
@@ -54,11 +59,15 @@ pnpm install
 | `pnpm test`   | Executa os testes com Vitest         |
 | `pnpm cli`    | Executa o CLI generator              |
 
+---
+
 ## 🧪 Testes
 
 ```bash
 pnpm test
 ```
+
+---
 
 ## 🤖 CLI Generator
 
@@ -75,6 +84,8 @@ Exemplo:
 ✅ Rota criada: apps/backend/src/listarProdutos.ts
 ```
 
+---
+
 ## 🔄 GitHub Actions
 
 O projeto já vem com um pipeline CI que roda:
@@ -86,11 +97,15 @@ O projeto já vem com um pipeline CI que roda:
 
 Toda vez que houver `push` ou `pull` request para a branch main.
 
+---
+
 ## 🧑‍💻 Como usar como template
 
 1. Clique no botão [Use this template]
 2. Escolha um nome para seu repositório
 3. Clone e comece a criar!
+
+---
 
 ## 📝 Licença
 
