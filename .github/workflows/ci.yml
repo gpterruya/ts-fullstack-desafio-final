@@ -25,11 +25,11 @@ jobs:
           node-version: 18
           cache: pnpm
 
-      - name: Rodar lint
-        run: pnpm lint
-
       - name: Install dependencies
         run: pnpm install
+        
+      - name: Rodar lint
+        run: pnpm lint
 
       - name: Build all packages
         run: pnpm run build
